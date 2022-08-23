@@ -1,20 +1,15 @@
 ///DOM
-let nombreSuscripcion = document.getElementById("nombre");
-let apellidoSuscripcion = document.getElementById("apellido");
 let emailSuscripcion = document.getElementById("email");
-let comentariosSuscripcion = document.getElementById("comentarios");
-nombreSuscripcion.value = prompt("Ingrese su nombre");
-apellidoSuscripcion.value = prompt("ingrese su apellido");
 emailSuscripcion.value = prompt("Ingrese su email");
+
+localStorage.setItem("email-suscripcion",JSON.stringify(emailSuscripcion.value));
 
 let seccionSuscripcion = document.getElementById("suscripcion");
 let parrafo = document.createElement("p");
 parrafo.innerHTML = "Gracias por suscribirte!";
 seccionSuscripcion.append(parrafo);
 
-localStorage.setItem("nombre-suscripcion",JSON.stringify(nombreSuscripcion.value));
-localStorage.setItem("apellido-suscripcion",JSON.stringify(apellidoSuscripcion.value));
-localStorage.setItem("email-suscripcion",JSON.stringify(emailSuscripcion.value));
+
 
 //EVENTOS STORAGE Y JSON
 
@@ -30,8 +25,7 @@ renderizarProductos();
 function renderizarProductos() {
     for (const producto of productos) {
         lista.innerHTML+=`<li class="col-sm-3 list-group-item">
-            <h3> ID: ${producto.id} </h3>
-            <img src=${producto.foto} width="250" height="250">
+            <img src=${producto.imagen} width="250" height="350">
             <p>${producto.modelo} ${producto.nombre}</p>
             <p><strong> $ ${producto.precio} </strong></p>
             <button class='btn btn-danger' id='btn${producto.id}'>Comprar</button>

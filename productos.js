@@ -1,24 +1,28 @@
 const productos=[
     {
         id:"123",
+        imagen:"./assets/bikini-mara.png",
         nombre:"mara",
         modelo:"Bikini",
         precio:3450
     },
     {
         id:"563",
+        imagen:"./assets/bikini-manuela.png",
         nombre:"manuela",
         modelo:"Bikini",
         precio:3350
     },
     {
         id:"234",
+        imagen:"./assets/bikini-nicole.png",
         nombre:"nicole",
         modelo:"Bikini",
         precio:3800
     },
     {
         id:"451",
+        imagen:"./assets/bikini-raquel.png",
         nombre:"raquel",
         modelo:"Bikini",
         precio:2700
