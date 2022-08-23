@@ -1,0 +1,26 @@
+const productos=[
+    {
+        id:"123",
+        nombre:"mara",
+        modelo:"Bikini",
+        precio:3450
+    },
+    {
+        id:"563",
+        nombre:"manuela",
+        modelo:"Bikini",
+        precio:3350
+    },
+    {
+        id:"234",
+        nombre:"nicole",
+        modelo:"Bikini",
+        precio:3800
+    },
+    {
+        id:"451",
+        nombre:"raquel",
+        modelo:"Bikini",
+        precio:2700
+    }
+];

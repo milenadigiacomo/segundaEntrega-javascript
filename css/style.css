@@ -1,0 +1,38 @@
+/* .bikinis-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  } */
+  .titulos{
+      text-align: center;
+      padding: 3%;
+  }
+  i{
+      font-size: 50px;
+      color: fuchsia;    
+      justify-content: center;
+  }
+  .newsletter{
+    padding-top: 110px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  footer{
+      text-align: center;
+      padding-top: 5%;
+  }
+  /* suscripcion */
+  .row-mod{
+    display: block;
+    padding: 5px;
+  }
+  .color-fucsia{
+    color: fuchsia;
+  }
+  .btn-mod{
+    background-color: fuchsia;
+    border-color: fuchsia;
+  }
