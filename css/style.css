@@ -16,19 +16,23 @@
   }
   .encontranosIG{
     padding-top: 110px;
+    padding-bottom: 110px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
   .newsletter{
-    padding-top: 110px;
+    height: 150px;
+    color: white;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
   }
-
+.bg{
+  background-color: black;
+}
   footer{
       text-align: center;
       padding-top: 5%;
