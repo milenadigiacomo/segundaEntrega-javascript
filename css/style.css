@@ -16,6 +16,19 @@
   }
   .encontranosIG{
     padding-top: 110px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .envios{
+    padding: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .pagos{
     padding-bottom: 110px;
     text-align: center;
     display: flex;
@@ -30,12 +43,8 @@
     flex-direction: column;
     justify-content: space-around;
   }
-.bg{
-  background-color: black;
-}
   footer{
       text-align: center;
-      padding-top: 5%;
   }
   /* suscripcion */
   .row-mod{

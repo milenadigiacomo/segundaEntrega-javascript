@@ -1,30 +1,86 @@
 const productos=[
     {
-        id:"123",
+        id:"0",
         imagen:"./assets/bikini-mara.png",
         nombre:"mara",
         modelo:"Bikini",
         precio:3450
     },
     {
-        id:"563",
+        id:"1",
         imagen:"./assets/bikini-manuela.png",
         nombre:"manuela",
-        modelo:"Bikini",
+        modelo:"Enteriza",
         precio:3350
     },
     {
-        id:"234",
+        id:"2",
         imagen:"./assets/bikini-nicole.png",
         nombre:"nicole",
         modelo:"Bikini",
         precio:3800
     },
     {
-        id:"451",
+        id:"3",
         imagen:"./assets/bikini-raquel.png",
         nombre:"raquel",
         modelo:"Bikini",
         precio:2700
+    },
+    {
+        id:"4",
+        imagen:"./assets/entera-beba.png",
+        nombre:"Beba",
+        modelo:"Enteriza",
+        precio:4700
+    },
+    {
+        id:"5",
+        imagen:"./assets/bikini-milena.png",
+        nombre:"Milena",
+        modelo:"Bikini",
+        precio:3700
+    },
+    {
+        id:"6",
+        imagen:"./assets/entera-nerina.png",
+        nombre:"Nerina",
+        modelo:"Enteriza",
+        precio:7200
+    },
+    {
+        id:"7",
+        imagen:"./assets/bikini-violeta.png",
+        nombre:"Violeta",
+        modelo:"Bikini",
+        precio:6500
+    },
+    {
+        id:"8",
+        imagen:"./assets/bikini-agustina.png",
+        nombre:"Agustina",
+        modelo:"Bikini",
+        precio:2100
+    },
+    {
+        id:"9",
+        imagen:"./assets/bikini-valeria.png",
+        nombre:"Valeria",
+        modelo:"Bikini",
+        precio:5670
+    },
+    {
+        id:"10",
+        imagen:"./assets/entera-teresa.png",
+        nombre:"Teresa",
+        modelo:"Enteriza",
+        precio:3409
+    },
+    {
+        id:"11",
+        imagen:"./assets/entera-vera.png",
+        nombre:"Vera",
+        modelo:"Enteriza",
+        precio:6790
     }
 ];
