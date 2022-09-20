@@ -80,13 +80,13 @@ function checkout_alert(){
             <form>
             <div class="row">
                 <div class="col">
-                <input type="text" required class="form-control" placeholder="Nombre">
+                <input type="text" class="form-control" placeholder="Nombre" Required>
                 </div>
                 <div class="col">
-                <input type="text" class="form-control" placeholder="Apellido">
+                <input type="text" class="form-control" placeholder="Apellido" Required>
                 </div>
             </div><br>
-            <input type="email" class="form-control" placeholder="Email">
+            <input type="email" class="form-control" placeholder="Email" Required>
             </form>
             
             `,
@@ -100,11 +100,17 @@ function checkout_alert(){
         cancelButtonAriaLabel: 'Thumbs down'
       }).then((result) => {
         
-        if (result.isConfirmed) {
+        if (result.isConfirmed && total_price!==0){
             Swal.fire(
                 'Hecho!',
                 'Realizaste la compra con éxito :))))',
                 'success'
+              )
+          }else{
+            Swal.fire(
+                'ERROR!',
+                'Debes añadir un artículo al carrito para finalizar la compra',
+                'error'
               )
           }
          carrito=[]
