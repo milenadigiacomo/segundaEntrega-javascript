@@ -2,28 +2,28 @@ const productos=[
     {
         id:"0",
         imagen:"./assets/bikini-mara.png",
-        nombre:"mara",
+        nombre:"Mara",
         modelo:"Bikini",
         precio:3450
     },
     {
         id:"1",
         imagen:"./assets/bikini-manuela.png",
-        nombre:"manuela",
+        nombre:"Manuela",
         modelo:"Enteriza",
         precio:3350
     },
     {
         id:"2",
         imagen:"./assets/bikini-nicole.png",
-        nombre:"nicole",
+        nombre:"Nicole",
         modelo:"Bikini",
         precio:3800
     },
     {
         id:"3",
         imagen:"./assets/bikini-raquel.png",
-        nombre:"raquel",
+        nombre:"Raquel",
         modelo:"Bikini",
         precio:2700
     },
@@ -44,7 +44,7 @@ const productos=[
     {
         id:"6",
         imagen:"./assets/entera-nerina.png",
-        nombre:"Nerina",
+        nombre:"John",
         modelo:"Enteriza",
         precio:7200
     },
