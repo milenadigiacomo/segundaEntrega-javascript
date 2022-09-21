@@ -64,7 +64,6 @@ function checkout_alert(){
          `
        }
 
-
     Swal.fire({
         title: '<h4 style="text-align: left">Carrito</u></h4>',
          html: `
@@ -80,13 +79,13 @@ function checkout_alert(){
             <form>
             <div class="row">
                 <div class="col">
-                <input type="text" class="form-control" placeholder="Nombre" Required>
+                <input id="nombre" type="text" class="form-control" placeholder="Nombre" Required>
                 </div>
                 <div class="col">
-                <input type="text" class="form-control" placeholder="Apellido" Required>
+                <input id="apellido" type="text" class="form-control" placeholder="Apellido" Required>
                 </div>
             </div><br>
-            <input type="email" class="form-control" placeholder="Email" Required>
+            <input id="email_add" type="email" class="form-control" placeholder="Email" Required>
             </form>
             
             `,
@@ -101,11 +100,26 @@ function checkout_alert(){
       }).then((result) => {
         
         if (result.isConfirmed && total_price!==0){
+            if(document.getElementById("nombre").value==="" || document.getElementById("apellido").value===""||document.getElementById("email_add").value===""){
+
+                Swal.fire(
+                    'ERROR!',
+                    'Debes completar tus datos para finalizar la compra',
+                    'error'
+                  )
+                
+            }else{
+                
             Swal.fire(
                 'Hecho!',
                 'Realizaste la compra con éxito :))))',
                 'success'
               )
+              carrito=[]
+              update_cart()
+              persist_cart()
+
+            }
           }else{
             Swal.fire(
                 'ERROR!',
@@ -113,9 +127,7 @@ function checkout_alert(){
                 'error'
               )
           }
-         carrito=[]
-        update_cart()
-        persist_cart()
+        
       })
 }
 
